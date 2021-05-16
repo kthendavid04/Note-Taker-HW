@@ -28,3 +28,10 @@ app.listen(PORT, () => console.log(`App listening on PORT ${PORT}`));
 //the next thing... my server is going to send those web pages; but my js in the other files; 
 //the index.js has all the functionality of how the app is supposed to work; how the notes are
 //supposed to get stored and read... 
+var PORT = process.env.PORT || 3001;
+
+
+
+    app.get("/", function(req, res) {
+        res.json(path.join(__dirname, "public/index.html"));
+      });

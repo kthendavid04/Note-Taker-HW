@@ -2,10 +2,10 @@
   "name": "noteHW",
   "version": "1.0.0",
   "description": "## Your Task",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "test",
-    "start": "node server.js"
+    "start": "node Develop/server.js"
   },
   "repository": {
     "type": "git",

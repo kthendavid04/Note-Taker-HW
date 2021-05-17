@@ -13,7 +13,7 @@ const DB = "Develop/db/db.json";
 // appendFiles(mock_data);
 
 
-
+//read File
 function readFiles(){
     fs.readFile(DB, 'utf8', function (err, data){
         if (err) {
@@ -25,8 +25,8 @@ function readFiles(){
         console.log(data);
     });
 }
-
-function appendFiles(new_data){
+//Append File
+function appendFiles(){
     fs.readFile(DB, 'utf8', function (err, data){
         if (err) {
             return console.log(err);
@@ -43,7 +43,7 @@ function appendFiles(new_data){
     });
     
 }
-
+//Write File
 function writeFile(contents_in_json){
     let json_as_string = JSON.stringify(contents_in_json);
     fs.writeFile(DB, json_as_string, err => {
